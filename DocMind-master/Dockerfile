@@ -9,7 +9,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY app/ ./app/
 COPY static/ ./static/
-
+COPY prompts/ ./prompts/ 
 # Create directory for ChromaDB data
 RUN mkdir -p /app/chroma_db
 
